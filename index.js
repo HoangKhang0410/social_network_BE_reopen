@@ -39,6 +39,8 @@ const io = new Server(http, {
     cors: {
         origin: 'https://social-network-be-reopen.onrender.com',
         methods: ['GET', 'POST'],
+        allowedHeaders: ['Access-Control-Allow-Origin', 'Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept', 'X-Requested-With', 'Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'],
+
     },
 });
 

@@ -157,7 +157,7 @@ const connectDB = async () => {
     }
 };
 
-connectDB();
+connectDB().catch(err => console.log(err));
 
 app.use('/api/auth', authRouter);
 app.use('/api/posts', postRouter);

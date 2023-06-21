@@ -37,7 +37,7 @@ const http = require('http').createServer(app);
 const { Server } = require('socket.io');
 const io = new Server(http, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://social-network-be-reopen.onrender.com',
         methods: ['GET', 'POST'],
     },
 });
